@@ -6,8 +6,8 @@ object SparkStackoverflowSurvey extends App {
 
   // Create a Spark session
   val spark = SparkSession.builder.appName("StackoverflowSurvey").master("local[*]")
-    .config("spark.hadoop.fs.s3a.access.key", "AKIAUFU64D3TH6RWCWNJ")
-    .config("spark.hadoop.fs.s3a.secret.key", "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")
+    .config("spark.hadoop.fs.s3a.access.key", "<key>")
+    .config("spark.hadoop.fs.s3a.secret.key", "<secret_key>")
     .config("spark.hadoop.fs.s3a.endpoint", "s3.us-east-2.amazonaws.com")
     .getOrCreate()
 
